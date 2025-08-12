@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioMorphX - Доставка и оплата</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Bio<span>MorphX</span></a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="products.html"><i class="fas fa-capsules"></i> Продукты</a></li>
+                    <li><a href="delivery.html"><i class="fas fa-flask"></i> Доставка</a></li>
+                    <li><a href="about.html"><i class="fas fa-users"></i> О нас</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+                    <li class="cart-icon">
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        <span class="cart-count">0</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Доставка и оплата</h1>
+                <p>Удобные способы получения и оплаты ваших заказов</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Section -->
+    <section class="about-section" style="padding: 80px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Способы доставки</h2>
+                <p>Мы находимся в Санкт-Петербурге и предлагаем несколько вариантов доставки</p>
+            </div>
+
+            <div class="delivery-methods" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px;">
+                <div class="delivery-card" style="background: rgba(20, 30, 50, 0.6); border-radius: 20px; padding: 30px; transition: var(--transition); border: 1px solid rgba(76, 181, 174, 0.2);">
+                    <h3 style="font-size: 22px; margin-bottom: 20px; color: var(--accent); display: flex; align-items: center; gap: 15px;">
+                        <i class="fas fa-truck"></i> Курьерская доставка
+                    </h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8; font-size: 16px; margin-bottom: 15px;">
+                        Бесплатная доставка курьером в пределах Санкт-Петербурга.
+                    </p>
+                    <p style="color: var(--gray); font-size: 14px;">
+                        Срок доставки: 2-4 ч. 
+                    </p>
+                </div>
+
+                <div class="delivery-card" style="background: rgba(20, 30, 50, 0.6); border-radius: 20px; padding: 30px; transition: var(--transition); border: 1px solid rgba(76, 181, 174, 0.2);">
+                    <h3 style="font-size: 22px; margin-bottom: 20px; color: var(--accent); display: flex; align-items: center; gap: 15px;">
+                        <i class="fas fa-box"></i> СДЭК
+                    </h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8; font-size: 16px; margin-bottom: 15px;">
+                        Доставка в любой город России через службу СДЭК. Стоимость рассчитывается при оформлении заказа.
+                    </p>
+                    <p style="color: var(--gray); font-size: 14px;">
+                        Срок доставки: 1-5 дней
+                    </p>
+                </div>
+
+                <div class="delivery-card" style="background: rgba(20, 30, 50, 0.6); border-radius: 20px; padding: 30px; transition: var(--transition); border: 1px solid rgba(76, 181, 174, 0.2);">
+                    <h3 style="font-size: 22px; margin-bottom: 20px; color: var(--accent); display: flex; align-items: center; gap: 15px;">
+                        <i class="fas fa-envelope"></i> Почта России
+                    </h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8; font-size: 16px; margin-bottom: 15px;">
+                        Доставка через Почту России. Стоимость рассчитывается при оформлении заказа.
+                    </p>
+                    <p style="color: var(--gray); font-size: 14px;">
+                        Срок доставки: 5-14 дней
+                    </p>
+                </div>
+
+                <div class="delivery-card" style="background: rgba(20, 30, 50, 0.6); border-radius: 20px; padding: 30px; transition: var(--transition); border: 1px solid rgba(76, 181, 174, 0.2);">
+                    <h3 style="font-size: 22px; margin-bottom: 20px; color: var(--accent); display: flex; align-items: center; gap: 15px;">
+                        <i class="fab fa-yandex"></i> Яндекс Доставка
+                    </h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8; font-size: 16px; margin-bottom: 15px;">
+                        Доставка до терминала Яндекс Доставки. Стоимость рассчитывается при оформлении заказа.
+                    </p>
+                    <p style="color: var(--gray); font-size: 14px;">
+                        Срок доставки: 1-3 дня
+                    </p>
+                </div>
+            </div>
+
+            <div class="payment-methods" style="margin-top: 80px;">
+                <div class="section-title">
+                    <h2>Способы оплаты</h2>
+                    <p>Выберите удобный для вас способ оплаты</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 40px;">
+                    <div style="background: rgba(20, 30, 50, 0.6); border-radius: 15px; padding: 20px; text-align: center; border: 1px solid rgba(76, 181, 174, 0.2);">
+                        <i class="fas fa-credit-card" style="font-size: 36px; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h4 style="font-size: 18px; margin-bottom: 10px; color: var(--text);">Банковской картой</h4>
+                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px;">Онлайн при оформлении заказа</p>
+                    </div>
+
+                    <div style="background: rgba(20, 30, 50, 0.6); border-radius: 15px; padding: 20px; text-align: center; border: 1px solid rgba(76, 181, 174, 0.2);">
+                        <i class="fas fa-money-bill-wave" style="font-size: 36px; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h4 style="font-size: 18px; margin-bottom: 10px; color: var(--text);">Наличными</h4>
+                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px;">При получении заказа</p>
+                    </div>
+
+                    <div style="background: rgba(20, 30, 50, 0.6); border-radius: 15px; padding: 20px; text-align: center; border: 1px solid rgba(76, 181, 174, 0.2);">
+                        <i class="fab fa-cc-paypal" style="font-size: 36px; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h4 style="font-size: 18px; margin-bottom: 10px; color: var(--text);">PayPal</h4>
+                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px;">Для международных заказов</p>
+                    </div>
+
+                    <div style="background: rgba(20, 30, 50, 0.6); border-radius: 15px; padding: 20px; text-align: center; border: 1px solid rgba(76, 181, 174, 0.2);">
+                        <i class="fas fa-mobile-alt" style="font-size: 36px; color: var(--accent); margin-bottom: 15px;"></i>
+                        <h4 style="font-size: 18px; margin-bottom: 10px; color: var(--text);">SberPay</h4>
+                        <p style="color: rgba(255, 255, 255, 0.7); font-size: 14px;">Оплата через СБП</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 80px; background: rgba(20, 30, 50, 0.6); border-radius: 20px; padding: 30px; border: 1px solid rgba(76, 181, 174, 0.2);">
+                <h3 style="font-size: 22px; margin-bottom: 20px; color: var(--accent); display: flex; align-items: center; gap: 15px;">
+                    <i class="fas fa-headset"></i> Поддержка
+                </h3>
+                <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8; font-size: 16px; margin-bottom: 15px;">
+                    Наша служба поддержки работает 24/7. Если у вас есть вопросы по доставке или оплате, свяжитесь с нами любым удобным способом.
+                </p>
+                <p style="color: var(--accent); font-weight: 600;">
+                    Телефон: +7 (999) 041-37-55<br>
+                    Email: support@biomorphx.ru<br>
+                    Telegram: @biomorphx_support
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>BioMorphX</h3>
+                    <p style="color: var(--secondary); margin-bottom: 20px;">Научный подход к вашему здоровью.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Продукты</h3>
+                    <ul>
+                        <li><a href="products.html"><i class="fas fa-capsules"></i> Аминокислоты</a></li>
+                        <li><a href="#"><i class="fas fa-brain"></i> Ноотропные комплексы</a></li>
+                        <li><a href="#"><i class="fas fa-battery-full"></i> Энергетические формулы</a></li>
+                        <li><a href="products.html"><i class="fas fa-list"></i> Все продукты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Компания</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fas fa-users"></i> О нас</a></li>
+                        <li><a href="science.html"><i class="fas fa-flask"></i> Наука</a></li>
+                        <li><a href="#"><i class="fas fa-industry"></i> Производство</a></li>
+                        <li><a href="#"><i class="fas fa-newspaper"></i> Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Поддержка</h3>
+                    <ul>
+                        <li><a href="delivery.html"><i class="fas fa-flask"></i> Доставка</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+                        <li><a href="#"><i class="fas fa-user-shield"></i> Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 BioMorphX. Все права защищены. Информация на сайте не является медицинской рекомендацией. Проконсультируйтесь со специалистом перед применением.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
